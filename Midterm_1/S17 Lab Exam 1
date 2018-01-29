@@ -1,0 +1,77 @@
+----------- EXPLANATION OF TEXT FILES GIVEN TO YOU -------------------
+
+Assume you have been given three files (day1.txt, day2.txt, day3.txt)
+These files contain purchase information for three separate days.
+Each purchase is in the following format:
+
+    CustomerNumber,ItemNumber;
+    
+The customer number is separated from the item purchased by a comma
+and at the end is a semicolon, signifying the end of the purchase.
+
+Each file contains multiple purchases and each purchase is separated
+by a semicolon like so:
+
+    customer1,item1;customer2,item2;customer3,item3;
+    
+In the example above, there are a total of three purchases made by three
+customers. Keep in mind that a single customer can make multiple purchases
+in the same day, meaning you can have the same customer listed multiple
+times:
+
+    customer1,item1;customer2,item2;customer1,item3;
+    
+
+------------------- WHAT I WANT YOU TO DO ----------------------------------
+
+1. Create a class called "Purchase", this class will have two member variables:
+    a. Customer
+    b. Item
+    
+    You can add any member functions you find necessary, however, for whatever
+    functions you add to your class, I want you to comment in your header file
+    a reason for why you are including it. IF YOU DO NOT GIVE A REASON I WILL
+    DEDUCT POINTS FOR NOT KEEPING MINIMAL FUNCTIONALITY.
+    
+2. Create an array of type purchase. There is a combined total of 15 purchases.
+
+3. Parse all purchase data from all three files and store into your purchase array.
+
+4. Sort the array in ascending order(do not use STL)
+   The array should be sorted by the following criterea:
+        1. Customer Number - Customer 100 should come before customer 200, and both
+           of those customers should come before customer 300.
+        2. Item Number - If two or more purchases are made by the same customer,
+           then you must sort according the item number.
+    
+    For example, assume you have the following:
+    
+           100,1A;200,1B;100,1C;100,1B;
+           
+           When parsed and sorted, your array should look like the following:
+           
+           arr[0]: Customer: 100, Item: 1A
+           arr[1]: Customer: 100, Item: 1B
+           arr[2]: Customer: 100, Item: 1C
+           arr[3]: Customer: 200, Item: 1B
+   
+    Hint: overloading relational operators (< or >) would really help you out.
+
+5. Print out the array onto the console
+
+
+--------------------------- FINAL COMMENTS -----------------------------------
+
+If you cannot figure out how to parse from the text files, then edit the files
+so that the format is easier for you to work with. However, this is just to help
+you turn something in. If the input files are changed there will be a few points
+deducted.
+
+Please submit all files used and include the console output either as a comment
+in main or as a screenshot. I will not accept console output as a comment on Canvas.
+FAILURE TO INCLUDE THIS WILL RESULT IN -2 POINTS.
+
+It does not matter whether you turn the exam in as a zip file or as individual files.
+
+Good luck.
+
