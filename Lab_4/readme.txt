@@ -1,1 +1,1 @@
-Program demonstrating linked lists using stock data in C++
+Program demonstrating doubly linked lists using stock data in C++
